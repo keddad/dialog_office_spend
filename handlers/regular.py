@@ -149,7 +149,7 @@ def new_spend_handler(bot: DialogBot, params):
         else:
             bot.messaging.send_message(
                 peer,
-                f"Остаток бюджета - {user_budget - spending}"
+                f"Остаток бюджета: {user_budget - spending}"
             )
 
         utils.cancel_handler(bot, params)
