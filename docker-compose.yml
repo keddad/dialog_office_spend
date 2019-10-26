@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  bot:
+  dialog_office_spend:
     environment:
       - BOT_TOKEN=TOKEN
     build:
