@@ -1,0 +1,13 @@
+version: "3"
+services:
+  bot:
+    environment:
+      - BOT_TOKEN=TOKEN
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - type: bind
+        source: ./db.db
+        target: /app/db.db
